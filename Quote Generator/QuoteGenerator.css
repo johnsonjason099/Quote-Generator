@@ -1,0 +1,23 @@
+
+body {
+    background-color: lightseagreen;
+    font-size: 16px;
+    font-family:Helvetica;
+    padding: 2rem;
+}
+img {
+    grid-template-columns: 100px;
+    justify-self: start;
+
+}
+
+
+
+div {
+    display: block;
+}
+.main {
+    float: left;
+    width: 70%;
+    text-align: center;
+}
