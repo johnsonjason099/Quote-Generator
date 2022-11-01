@@ -23,41 +23,40 @@ let quotes = [
   document.querySelector('#main-title').textContent = 'Welcome to my Momma\'s quotes.'
   
     // Part 2
-  document.querySelector('body').style.backgroundColor = 'skyblue'
+  //document.querySelector('body').style.backgroundColor = 'skyblue'
   
     // Part 3
-  const favoriteThings = document.querySelectorAll('#favorite-things > li')
+  //const favoriteThings = document.querySelectorAll('#favorite-Activities> li')
   
-  document.querySelector('#favorite-things').removeChild(favoriteThings[favoriteThings.length - 1])
+  //document.querySelector('#favorite-Activities').removeChild(favoriteThings[favoriteThings.length - 1])
   
     // Part 4
-  document.querySelectorAll('.special-title').forEach((item) => {
-    item.style.fontSize = '2rem'
-  })
+  //document.querySelectorAll('.special-title').forEach((item) => {
+   // item.style.fontSize = '2rem'
+ // })
   
     // Part 5
-  document.querySelectorAll('#Favorite Recipes > li').forEach((item) => {
-    if(item.textContent.trim() === ''){
-      document.querySelector('#Favorite Recipes').removeChild(item)
-    }
-  })
-  
+ // document.querySelectorAll('#Favorite Recipes > li').forEach((item) => {
+  //  if(item.textContent.trim() === ''){
+   //   document.querySelector('#Favorite Recipes').removeChild(item)
+  //  }
+ // })
     // Part 6
-  const li = document.createElement('li')
-    document.querySelector('#Favorite Recipes').appendChild(li)
+ // const li = document.createElement('li')
+   // document.querySelector('#Favorite things').appendChild(li)
   
     // Part 7
-  const blogPost = document.createElement('div')
-  blogPost.classList.add('blog-post')
-  const heading = document.createElement('h2')
+  //const blogPost = document.createElement('div')
+  //blogPost.classList.add('blog-post')
+  //const heading = document.createElement('h2')
   
-  const pEl = document.createElement('p')
-  pEl.textContent = 'Her hometown : Omaha, NE'
+  //const pEl = document.createElement('p')
+ // pEl.textContent = 'Her hometown : Omaha, NE'
   
-  document.querySelector('.main').appendChild(blogPost)
+  //document.querySelector('.main').appendChild(blogPost)
   
-  blogPost.appendChild(heading)
-  blogPost.appendChild(pEl)
+  //blogPost.appendChild(heading)
+  //blogPost.appendChild(pEl)
   
     // Part 8
   document.querySelector('#quote-title').addEventListener('click', (evt) => {
@@ -66,17 +65,14 @@ let quotes = [
   
     // Part 9
   
-  document.querySelectorAll('.blog-post').forEach((item) => {
-    item.addEventListener('mouseout', (evt) => {
-      evt.currentTarget.classList.toggle('purple')
-    })
+  //document.querySelectorAll('.blog-post').forEach((item) => {
+  //  item.addEventListener('mouseout', (evt) => {
+  //    evt.currentTarget.classList.toggle('purple')
+  //  })
     item.addEventListener('mouseenter', (evt) => {
     evt.stopPropagation()
-    evt.currentTarget.classList.toggle('red')
+    evt.currentTarget.classList.toggle('yellow')
     })
   })
-  
-  
-  
-  });
+  //});
   
