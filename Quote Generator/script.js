@@ -1,13 +1,13 @@
 let quotes = [
     `Making your bed is the first thing you should do`,
-    `As you are walking out the door... That shirt needs to be ironed`,
+    `As you are walking out the door.. That shirt needs to be ironed`,
     `Chew with your mouth closed, Dear.`,
     `If you didn't want to talk about it, why did you start the conversation?`,
     `I love you`,
     `You need to call more often`,
     `Because I said so`,
     `You are just like your Father`,
-    `Shouting your name like there is no tommorow... Do you want a muffin?`
+    `Screaming your name in bloody murder to ask.. Do you want a muffin?`
   ];
   
   document.addEventListener("DOMContentLoaded", function(event) {
@@ -20,30 +20,30 @@ let quotes = [
     // Do all of your work inside the document.addEventListener  
   
     // Part 1
-  document.querySelector('#main-title').textContent = 'Welcome to my Momma\'s quotes.'
+  document.querySelector('#main-title').textContent = 'My Momma\'s Quotes'
   
-    // Part 2
+    //Part 2
   //document.querySelector('body').style.backgroundColor = 'skyblue'
   
     // Part 3
-  //const favoriteThings = document.querySelectorAll('#favorite-Activities> li')
+  const favoriteThings = document.querySelectorAll('#favorite-Activities > li')
   
-  //document.querySelector('#favorite-Activities').removeChild(favoriteThings[favoriteThings.length - 1])
+  document.querySelector('#favorite-Activities').removeChild(favoriteThings[favoriteThings.length - 1])
   
     // Part 4
-  //document.querySelectorAll('.special-title').forEach((item) => {
-   // item.style.fontSize = '2rem'
- // })
+  document.querySelectorAll('.special-title').forEach((item) => {
+   item.style.fontSize = '2rem'
+ })
   
     // Part 5
- // document.querySelectorAll('#Favorite Recipes > li').forEach((item) => {
-  //  if(item.textContent.trim() === ''){
-   //   document.querySelector('#Favorite Recipes').removeChild(item)
-  //  }
- // })
+ document.querySelectorAll('#Favorite Recipes > li').forEach((item) => {
+   if(item.textContent.trim() === ''){
+     document.querySelector('#Favorite Recipes').removeChild(item)
+   }
+ })
     // Part 6
- // const li = document.createElement('li')
-   // document.querySelector('#Favorite things').appendChild(li)
+ const li = document.createElement('li')
+   document.querySelector('#Favorite things').appendChild(li)
   
     // Part 7
   //const blogPost = document.createElement('div')
@@ -59,20 +59,20 @@ let quotes = [
   //blogPost.appendChild(pEl)
   
     // Part 8
-  document.querySelector('#quote-title').addEventListener('click', (evt) => {
-    randomQuote()
-  })
+  document.querySelector('#quote-of-the-day').addEventListener('click', (evt) => {
+    randomQuote();
+  });
   
     // Part 9
   
-  //document.querySelectorAll('.blog-post').forEach((item) => {
-  //  item.addEventListener('mouseout', (evt) => {
-  //    evt.currentTarget.classList.toggle('purple')
-  //  })
+  document.querySelectorAll('.blog-post').forEach((item) => {
+   item.addEventListener('mouseout', (evt) => {
+     evt.currentTarget.classList.toggle('purple')
+   })
     item.addEventListener('mouseenter', (evt) => {
     evt.stopPropagation()
     evt.currentTarget.classList.toggle('yellow')
     })
   })
-  //});
+ })
   

@@ -14,9 +14,10 @@ h1 {
 }
 div {
     background-color: rgb(196, 196, 64);
+
 } 
 body {
-    background-color: lightseagreen;
+    background-color:  rgb(196, 196, 64);;
     font-size: 16px;
     font-family:Helvetica;
     padding: 2rem;
@@ -25,6 +26,8 @@ body {
     .side-bar {
         float: left;
         width: 15%;
+        
+        
     }
 #img.family-photo {
    display:flex;
@@ -41,11 +44,11 @@ body {
 div {
     display:flex;
     flex-direction: column;
-    }     nav,
-       aside{
+    }     
+    nav {
         background-color: bisque;
-        }
-    main{
+    }
+    main {
         background-color: aqua;
     }
     footer {
